@@ -1,17 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Banaynay</title>
-    <link href="styles.css" rel="stylesheet">
-</head>
-<body>
+    <link href="styles.css" rel="stylesheet" />
+  </head>
+  <body>
     <form action="">
-        <label for="choose">Would you like a banana or cherry? (required)</label>
-        <input name="i-like" id="choose" required pattern="[Bb]anana|[Cc]herry"/>
+      <div>
+        <label for="choose"
+          >Would you like a banana or cherry? (required)</label
+        >
+        <input
+          type="text"
+          name="i-like"
+          id="choose"
+          required
+          pattern="[Bb]anana|[Cc]herry"
+        />
         <button>Submit</button>
+      </div>
+      <div>
+        <label for="number">How many would you like?</label>
+        <input
+          type="number"
+          id="number"
+          name="amount"
+          value="1"
+          min="1"
+          max="10"
+        />
+      </div>
+      <div>
+        <button>Submit</button>
+      </div>
     </form>
-</body>
+  </body>
 </html>
